@@ -7,6 +7,12 @@ app.get('/', function(req, res) {
     res.send('Hello world')
 })
 
+app.post('/login', function(req, res) {
+    res.json({
+        access_token: 'abcde'
+    })
+})
+
 app.listen(PORT, function() {
     console.log('Listening on port', PORT)
 })
