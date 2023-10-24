@@ -7,6 +7,10 @@ app.get('/', function(req, res) {
     res.send('Hello world')
 })
 
+app.get('/products', function(req, res) {
+    res.json([{}])
+})
+
 app.listen(PORT, function() {
     console.log('Listening on port', PORT)
 })
